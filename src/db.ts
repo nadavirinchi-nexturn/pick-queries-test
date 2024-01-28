@@ -47,7 +47,7 @@ async function ExecuteSqlQuery(
       case Utils.DB_SOURCES.EBS:
         // Getting the connection
         connection = await oracledb.getConnection(dbConfig);
-        oracledb.fetchAsString = [OracleDB.CLOB];
+        oracledb.fetchAsString = [oracledb.CLOB];
 
         // Executing query
         console.log("query:", query);
@@ -64,7 +64,7 @@ async function ExecuteSqlQuery(
       case Utils.DB_SOURCES.EBS_READ:
         // Getting the connection
         connection = await oracledb.getConnection(dbConfig);
-        oracledb.fetchAsString = [OracleDB.CLOB];
+        oracledb.fetchAsString = [oracledb.CLOB];
 
         // Executing query
         console.log("query:", query);

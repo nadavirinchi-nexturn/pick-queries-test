@@ -12,6 +12,11 @@ const PickQueries = require('./pickqueries')
  * @param {*} source
  * @returns count of all the summary
  */
+
+function testFunc(): string {
+  return 'test function invoked successfully'
+}
+
 async function Dashboard(invOrgId, username, source = utils.DB_SOURCES.EBS) {
   try {
     console.time("Dashboard Query Time");
@@ -809,6 +814,7 @@ async function IsSerialNumberScanned(
 }
 
 const PickDetails = {
+  testFunc,
   CountBasedonDeliveryId,
   DeliveryDetails,
   Search,
