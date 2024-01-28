@@ -620,7 +620,7 @@ function IsSerialNumberScanned(transactionTempId, serialNo, source = utils.DB_SO
         }
     });
 }
-const PickDetails = {
+module.exports = {
     testFunc,
     CountBasedonDeliveryId,
     DeliveryDetails,
@@ -641,5 +641,4 @@ const PickDetails = {
     GetSerialNumbers,
     IsSerialNumberScanned,
 };
-module.exports = PickDetails;
 //# sourceMappingURL=index.js.map

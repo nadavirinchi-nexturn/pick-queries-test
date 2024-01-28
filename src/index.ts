@@ -813,7 +813,7 @@ async function IsSerialNumberScanned(
   }
 }
 
-const PickDetails = {
+module.exports = {
   testFunc,
   CountBasedonDeliveryId,
   DeliveryDetails,
@@ -834,4 +834,3 @@ const PickDetails = {
   GetSerialNumbers,
   IsSerialNumberScanned,
 };
-module.exports = PickDetails;
