@@ -20,7 +20,7 @@ function getSecret(secretName) {
         };
         try {
             let dbConObj;
-            let isLocal = false;
+            let isLocal = true;
             if (!isLocal) {
                 const response = yield axios.get(url, { headers });
                 dbConObj = JSON.parse((_a = response === null || response === void 0 ? void 0 : response.data) === null || _a === void 0 ? void 0 : _a.SecretString);
