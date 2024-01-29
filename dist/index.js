@@ -622,6 +622,7 @@ function IsSerialNumberScanned(transactionTempId, serialNo, source = utils.DB_SO
 }
 module.exports = {
     testFunc,
+    Dashboard,
     CountBasedonDeliveryId,
     DeliveryDetails,
     Search,
