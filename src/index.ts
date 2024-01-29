@@ -815,6 +815,7 @@ async function IsSerialNumberScanned(
 
 module.exports = {
   testFunc,
+  Dashboard,
   CountBasedonDeliveryId,
   DeliveryDetails,
   Search,
